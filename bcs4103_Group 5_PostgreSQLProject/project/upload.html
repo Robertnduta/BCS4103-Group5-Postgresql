@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta content="recipe blog" charset="utf-8">
+<style>
+.row{
+  padding: 60px 50px;
+}
+.column {
+  float: left;
+  width: 50%;
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+h5{
+  text-align: center;
+  font-size: 20px;
+  font-family: sans-serif;
+  font-weight: 400;
+  color: black;
+  line-height: 0.1px;
+}
+.edit{
+  margin: 5px;
+  background-color: #fff;
+      border: 1px solid #e5e5e5;
+      -webkit-border-radius: 3px;
+      -moz-border-radius: 3px;
+      -ms-border-radius: 3px;
+      -o-border-radius: 3px;
+      -khtml-border-radius: 3px;
+      border-radius: 3px;
+      box-sizing: border-box;
+      color: #8d8d8d;
+      font: 14px Helvetica;
+      height: 40px;
+      line-height: 17px;
+      padding: 0 16px;
+      width: 100%;
+}
+.area{
+  margin: 5px;
+  border: 1px solid #e5e5e5;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  -khtml-border-radius: 3px;
+  border-radius: 3px;
+  box-sizing: border-box;
+padding:30px;
+
+}
+.btn{
+  background-color: #158cba;
+    color: #fff;
+    font-family: Lato,Noto Sans,Noto Sans JP,Noto Sans KR,Noto Sans SC,Noto Sans TC,sans-serif;
+    -webkit-font-smoothing: antialiased;
+    font-weight: 700;
+    letter-spacing: 2px;
+    line-height: 1.25rem;
+    font-size: .8571428571rem;
+    padding: 0.5rem 1rem;
+    align-items: center;
+    border: 0;
+    border-radius: 4px;
+  margin: 5px;
+  width: 100%;
+  border-radius: 0.5px;
+  box-shadow: 10px 10px 5px 0px rgba(181,170,170,0.75);
+-webkit-box-shadow: 10px 10px 5px 0px rgba(181,170,170,0.75);
+-moz-box-shadow: 10px 10px 5px 0px rgba(181,170,170,0.75);
+}
+#myFile{
+  margin: 5px;
+
+}
+</style>
+<body>
+<div class='row'>
+<div class='column'>
+<img src='images/upload.jpg' width='100%'>
+</div>
+<div class='column'>
+  <h5>UPLOAD YOUR RECIPE</h5>
+
+<form action='uploaddb.php' method='post'>
+ <input type="file" id="myFile"  name="filename"><br>
+ <input type='text' name='tittle' class='edit' placeholder='enter title'><br>
+ <input type='text' name='descr' class='edit' placeholder='enter description'><br>
+ <textarea type='text' name='ing' class="area"rows=4 cols='50' placeholder='enter ingridients'></textarea><br>
+ <button type='submit' name='submitt'class='btn'>upload</button>
+</form>
+</div>
+</div>
+
+</body>
+</html>

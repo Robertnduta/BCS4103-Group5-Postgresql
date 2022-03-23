@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta content="recipe blog" charset="utf-8">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+.row{
+  padding: 20px;
+}
+.column {
+  float: left;
+  width: 50%;
+  overflow: hidden;
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+img{
+  object-fit: cover;
+  width:200px;
+  height: 200px;
+  border-radius: 50%;
+  align-items: center;
+  margin: 5px;
+
+}
+.pr{
+  width:70%;
+  border:none;
+
+}
+.btn{
+  background-color: #158cba;
+    color: #fff;
+    font-family: Lato,Noto Sans,Noto Sans JP,Noto Sans KR,Noto Sans SC,Noto Sans TC,sans-serif;
+    -webkit-font-smoothing: antialiased;
+    font-weight: 700;
+    letter-spacing: 2px;
+    line-height: 1.25rem;
+    font-size: .8571428571rem;
+    padding: 0.5rem 1rem;
+    align-items: center;
+    border: 0;
+    border-radius: 4px;
+  margin: 5px;
+  max-width: 70%;
+  border-radius: 0.5px;
+
+}
+h5{
+  text-align: center;
+  font-size: 20px;
+  font-family: sans-serif;
+  font-weight: 400;
+  color: black;
+  line-height: 0.1px;
+  text-transform: uppercase;
+}
+.area{
+  margin: 5px;
+  border: 1px solid #e5e5e5;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  -khtml-border-radius: 3px;
+  border-radius: 3px;
+  box-sizing: border-box;
+padding:30px;
+
+}
+.edit{
+  margin: 5px;
+  background-color: #fff;
+      border: 1px solid #e5e5e5;
+      -webkit-border-radius: 3px;
+      -moz-border-radius: 3px;
+      -ms-border-radius: 3px;
+      -o-border-radius: 3px;
+      -khtml-border-radius: 3px;
+      border-radius: 3px;
+      box-sizing: border-box;
+      color: #8d8d8d;
+      font: 14px Helvetica;
+      height: 40px;
+      line-height: 17px;
+      padding: 0 16px;
+      width: 70%;
+
+}
+h2{
+  text-align: center;
+  text-transform: uppercase;
+  font-family:sans-serif;
+
+}
+.form {
+    margin:0;
+}
+
+.form li {
+    list-style:none;
+}
+
+.hide {
+    display:none;
+}
+
+.rating input[type="radio"] {
+    position:absolute;
+    filter:alpha(opacity=0);
+    -moz-opacity:0;
+    -khtml-opacity:0;
+    opacity:0;
+    cursor:pointer;
+    width:17px;
+}
+
+.rating span {
+    width:24px;
+    height:16px;
+  line-height:16px;
+  padding:1px 22px 1px 0; /* 1px FireFox fix */
+  background:url(stars.png) no-repeat -22px 0;
+}
+
+.rating input[type="radio"]:checked + span {
+  background-position:-22px 0;
+}
+
+.rating input[type="radio"]:checked + span ~ span {
+  background-position:0 0;
+}
+</style>
+<body>
+ <div class="header">
+<h2> some other great recipe</h3>
+ </div>
+ <div class="container">
+ <div class=row>
+ <div class=column>
+  <img src='images/pizza.jfif'alt='pic' width=100%></img><br>
+  <p class='pr'>1 1/2 cups (355 ml) warm water (105°F-115°F)
+1 package (2 1/4 teaspoons) active dry yeast.
+3 3/4 cups (490 g) bread flour.
+2 tablespoons extra virgin olive oil (omit if cooking pizza in a wood-fired pizza oven)
+2 teaspoons salt.
+1 teaspoon sugar.</p>
+  <p class='pr'>Bake pizza in the 475°F oven, one at a time, until the crust is browned and the cheese is golden, about 10-15 minutes. If you want, toward the end of the cooking time you can sprinkle on a little more cheese.</p>
+  <p class='pr'></p>
+</div>
+<div class=column>
+  <ul class="form">
+   <li class="rating">
+       <input type="radio" name="rating" value="0" checked /><span class="hide"></span>
+       <input type="radio" name="rating" value="1" /><span></span>
+       <input type="radio" name="rating" value="2" /><span></span>
+       <input type="radio" name="rating" value="3" /><span></span>
+       <input type="radio" name="rating" value="4" /><span></span>
+       <input type="radio" name="rating" value="5" /><span></span>
+   </li>
+</ul>
+  <input type='text' name='tittle' class='edit' placeholder='enter name'><br>
+  <textarea type=text name=ing class=area rows=4 cols=50 placeholder=comment></textarea><br>
+  <button type=submit name=submitt class=btn>rate this recipe</button>
+</div>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta content="recipe blog" charset="utf-8">
+<style>
+*{
+}
+.container{
+  padding: 60px 50px;
+  width: 50%;
+  margin:auto;
+  text-align: center;
+  max-width: 380px;
+}
+.container h3{
+  font-family: sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  line-height:normal;
+  letter-spacing: 1px;
+
+
+}
+.edit{
+  margin: 5px;
+  background-color: #fff;
+      border: 1px solid #e5e5e5;
+      -webkit-border-radius: 3px;
+      -moz-border-radius: 3px;
+      -ms-border-radius: 3px;
+      -o-border-radius: 3px;
+      -khtml-border-radius: 3px;
+      border-radius: 3px;
+      box-sizing: border-box;
+      color: #8d8d8d;
+      font: 14px Helvetica;
+      height: 40px;
+      line-height: 17px;
+      padding: 0 16px;
+      width: 100%;
+}
+.btn{
+  background-color: #158cba;
+    color: #fff;
+    font-family: Lato,Noto Sans,Noto Sans JP,Noto Sans KR,Noto Sans SC,Noto Sans TC,sans-serif;
+    -webkit-font-smoothing: antialiased;
+    font-weight: 700;
+    letter-spacing: 2px;
+    line-height: 1.25rem;
+    font-size: .8571428571rem;
+    padding: 0.5rem 1rem;
+    align-items: center;
+    border: 0;
+    border-radius: 4px;
+  margin: 5px;
+  width: 100%;
+  border-radius: 0.5px;
+  box-shadow: 10px 10px 5px 0px rgba(181,170,170,0.75);
+-webkit-box-shadow: 10px 10px 5px 0px rgba(181,170,170,0.75);
+-moz-box-shadow: 10px 10px 5px 0px rgba(181,170,170,0.75);
+
+}
+
+</style>
+<body>
+
+<div class=container>
+<h3>LOG IN</h3>
+
+
+<form action="logindb.php" method="post">
+<input type="email" class="edit" placeholder="Enter email address"  name='user'autocomplete autofocus required></input><br>
+<input type="text" class="edit" placeholder="Enter password"  name='pass' autocomplete autofocus required></input><br>
+<button class="btn"type="submit" name='submitt' value='submit'>Log In </button>
+
+
+
+</form>
+</div>
+
+</body>
+</html>
